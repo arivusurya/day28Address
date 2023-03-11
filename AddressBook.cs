@@ -12,6 +12,12 @@ public class AddressBook{
         AddressList.Add(data);
     }
 
+    public void jsonData(){
+        Address datalist =JsonHandler.cnvertjson();
+
+        AddressList.Add(datalist);
+    }
+
     public void Display(){
         foreach(Address item in AddressList){
             Console.WriteLine(item.name);
